@@ -107,6 +107,8 @@ def check_1():
 	elif a7==a8 and a8==a9:
 		if a7=='X':print('Congratulations! You won (=^_^=)');s1='Y'
 		elif a8=='O':print('Computer won (n_n)'.upper());s1='Y'
+	elif a1!=' ' and a2!=' ' and a3!=' ' and a4!=' ' and a5 != ' ' and a6 != ' ' and a7 != ' ' and a8 != ' ' and a9 != ' ':
+		print("It's a TIE")
 	return s1
 def check_2():
 	global a1,a2,a3,a4,a5,a6,a7,a8,a9,s1
@@ -134,6 +136,8 @@ def check_2():
 	elif a7==a8 and a8==a9:
 		if a7=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
 		elif a8=='O':print('PLAYER 2 won (n_n)');s1='Y'
+	elif a1!=' ' and a2!=' ' and a3!=' ' and a4!=' ' and a5 != ' ' and a6 != ' ' and a7 != ' ' and a8 != ' ' and a9 != ' ':
+		print("It's a TIE")
 	return s1
 def mode_1():
 	ask=input("Who's first: PERSON or COMPUTER (P/C): ")
@@ -155,33 +159,6 @@ def mode_1():
 				if a1==' ' or a2==' ' or a3==' ' or a4==' ' or a5==' ' or a6==' ' or a7==' ' or a8==' ' or a9==' ':
 					if s1!='Y':per();check_1()
 			else:break
-def check_2():
-	global a1,a2,a3,a4,a5,a6,a7,a8,a9,s1
-	if a1==a2 and a2==a3:
-		if a1=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a1=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a1==a4 and a4==a7:
-		if a1=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a1=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a1==a5 and a5==a9:
-		if a1=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a1=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a2==a5 and a5==a8:
-		if a2=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a2=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a3==a6 and a6==a9:
-		if a3=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a3=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a3==a5 and a5==a7:
-		if a3=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a3=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a4==a5 and a5==a6:
-		if a4=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a4=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	elif a7==a8 and a8==a9:
-		if a7=='X':print('PLAYER 1 won (=^_^=)');s1='Y'
-		elif a8=='O':print('PLAYER 2 won (n_n)');s1='Y'
-	return s1
 def per_1():
 	global a1, a2, a3, a4, a5, a6, a7, a8, a9
 	player = input('Enter the location of player 1 choice: ')
